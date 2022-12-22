@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.83480ae8.css",
+    "main.js": "/static/js/main.d9fa7230.js",
+    "static/media/User-2.svg": "/static/media/User-2.05d932beb9e04a1394c38dccdf859859.svg",
+    "static/media/User-3.svg": "/static/media/User-3.b3f18dbc98736d843cc3e2a54c44b5a2.svg",
+    "static/media/User-4.svg": "/static/media/User-4.e030886036a729a140ebf4a486420ddc.svg",
+    "static/media/Party.svg": "/static/media/Party.d10fcae80f79d7effb78c1e5373f375c.svg",
+    "static/media/User-1.svg": "/static/media/User-1.1e98d30d185143a84f4d29cf7e201d27.svg",
+    "static/media/GT-Walsheim-Regular-Trial.woff2": "/static/media/GT-Walsheim-Regular-Trial.65e2b73b7348d3bc1a2d.woff2",
+    "static/media/calendar.svg": "/static/media/calendar.f572a559e1eeefa5443837b67ec55301.svg",
+    "static/media/message.svg": "/static/media/message.e4074b4cd41653c1d505ea1fa7e372af.svg",
+    "static/media/link.svg": "/static/media/link.6d0df79e342bc3a6512bad854fe63e61.svg",
+    "static/media/Completed.svg": "/static/media/Completed.e37740e380ccde421ac40bd77c7f9bc9.svg",
+    "index.html": "/index.html",
+    "static/media/In-Progress.svg": "/static/media/In-Progress.83c6a22c82c7a2548e672a0ad092fc30.svg",
+    "static/media/Dashed-Circle.svg": "/static/media/Dashed-Circle.b7a25063a7f514a49466cb0ad61bb138.svg",
+    "main.83480ae8.css.map": "/static/css/main.83480ae8.css.map",
+    "main.d9fa7230.js.map": "/static/js/main.d9fa7230.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83480ae8.css",
+    "static/js/main.d9fa7230.js"
+  ]
+}
