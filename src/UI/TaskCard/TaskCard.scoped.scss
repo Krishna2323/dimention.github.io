@@ -1,0 +1,108 @@
+.task-card{
+    --padding-sides:1.6rem;
+    width: 100%;
+    padding: 0rem var(--padding-sides) 0;
+    border-radius: var(--br-md);
+    border: 1px solid var(--border-color-primary);
+    display: flex;
+    flex-direction: column;
+    // gap: 1.2rem;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    transform-style: preserve-3d;
+    // overflow-x: ;
+
+    & .extra-bg{
+        position: absolute;
+        width: 98%;
+        height: 5rem;
+        top: calc(100% - 4.5rem);
+        left: 50%;
+        border-radius: var(--br-md);
+        border: 1px solid var(--border-color-primary);
+        transform: translateX(-50%) translateZ(-10px);
+    }
+
+    & .flyte{
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: #7F8995;
+        letter-spacing: .6px;
+        line-height: 24px;
+        margin-bottom: .8rem;
+        font-family: "Gt-Whelshime-Light", sans-serif;
+        margin-top: .7rem;
+    }
+    & .title{
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: .6rem;
+    }
+
+    & .description{
+        font-size: 1.2rem;
+        color: #7F8995;
+        line-height: 1.6;
+        font-weight: 400;
+        margin-bottom: 1.2rem;
+        font-family: "Gt-Whelshime-Regular", sans-serif;
+    }
+    
+    & .tag-and-avatars{
+        display: flex;
+        margin-bottom: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+        font-family: Gt-Whelshime-Light,sans-serif;
+
+        & .tag{
+        padding: .4rem .8rem;
+        color: #2F6BFE;
+        background: #EAF0FF;
+        width: fit-content;
+        font-weight: 700;
+        font-size: 1.2rem;
+        border-radius: 4px;
+        }
+        & .avatars img{
+            width: 3rem;
+            height: 3rem;
+        }
+        & .avatars:not(:first-child) img{
+            margin-left: -1.2rem;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+    }
+    & .bottom-bar{
+        display: flex;
+        gap: .8rem;
+        padding: 1.2rem 0;
+        position: relative;
+        // margin-left: -.7rem;
+        // margin-right: -.7rem;
+        // overflow: hidden;
+        font-family: Gt-Whelshime-Light,sans-serif;
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% + var(--padding-sides) * 2 );
+            height: 1px;
+            background-color: var(--border-color-primary);
+        }
+        & > span{
+            display: flex;
+            align-items: center;
+            gap: .45rem;
+            font-weight: 500;
+            font-size: 1.2rem;
+            color: #98A5B3;
+        }
+    }
+}

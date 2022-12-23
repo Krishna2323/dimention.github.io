@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import ProjectContent from './components/kaban-board/project-content/ProjectContent';
+import ProjectDetails from './components/kaban-board/project-sidebar/ProjectSidebar';
+import SideNavbar from './components/kaban-board/side-navbar/SideNavbar';
+import TaskFormModal from './UI/TaskFormModal/TaskFormModal';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="kanban-board">
+      <SideNavbar/>
+      <ProjectDetails/>
+      <ProjectContent/>
+      <TaskFormModal open={true}/>
     </div>
   );
 }

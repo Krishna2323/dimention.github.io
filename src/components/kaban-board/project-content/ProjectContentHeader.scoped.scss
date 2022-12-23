@@ -1,0 +1,115 @@
+.project-content__header {
+    padding: 0 1.6rem 0 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--header-height);
+    width: 100%;
+    border-bottom: 1px solid var(--border-color-primary);
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 2;
+
+    & .breadcrums {
+        display: flex;
+        list-style: none;
+
+        & li:last-of-type {
+            & svg {
+                display: none;
+            }
+
+            color: #6C6F75;
+        }
+
+        & li {
+            display: flex;
+            align-items: center;
+            color: #282A2F;
+
+            & a {
+                font-size: 1.4rem;
+                font-weight:500;
+                text-decoration: none;
+                line-height: 2rem;
+                color: inherit;
+            }
+
+            & svg {
+                transform: translateY(1.5px);
+                color: #6C6F75;
+                padding: 2px;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+
+    & .selection {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-left: .6rem;
+        color: #6C6F75;
+        background: #EEEEEE;
+        padding:0  .6rem;
+        border-radius: 5px;
+        line-height: 2rem;
+        text-transform: uppercase;
+        margin-right: auto;
+    }
+
+    & .search-bar {
+        & div {
+            position: relative;
+
+            & input {
+                border: none;
+                outline: none;
+                border-radius: var(--br-sm);
+                background-color: #EFEFEF;
+                padding: .8rem .8rem .8rem 3.2rem;
+                width: 15rem;
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: #5C6066;
+                display: table-cell;
+                vertical-align: middle;
+
+                // transform: translateY(4px);
+
+                &::placeholder{
+                    color: #5C6066;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: #5C6066;
+                }
+            }
+
+            & img {
+                position: absolute;
+                top: 50%;
+                left: .93rem;
+                transform: translateY(-50%);
+                color: #94989E;
+                width: 1.3rem;
+                height: 1.3rem;
+            }
+        }
+    }
+
+    & .header-icon {
+        border-radius: 8px;
+        border: 1px solid var(--border-color-primary);
+        padding: .6rem .5rem;
+        display: flex;
+        align-items: center;
+        margin-left:.8rem ;
+// 
+        & svg {
+            color: #5C6066;
+            width: 1.8rem;
+            height: 1.6rem;
+        }
+    }
+}

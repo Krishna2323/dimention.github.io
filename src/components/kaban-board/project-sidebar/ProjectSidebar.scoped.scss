@@ -1,0 +1,112 @@
+.project-sidebar {
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid var(--border-color-primary);
+
+    & .project-name  {
+        height: var(--header-height);
+        display: flex;
+        align-items: center;
+        padding: 1.7rem 1.2rem;
+        & h2{
+            font-size: 1.4rem;
+        }
+    }
+
+    & .project-image {
+        & img {
+            width: 100%;
+        }
+    }
+
+    & .project-progress {
+        // height: 5rem;
+        border-bottom: 1px solid var(--border-color-primary);
+        padding: 1.2rem 1.4rem 1.6rem;
+        line-height: 1.6rem;
+
+        &__stats {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: .8rem;
+
+            &-level {
+                font-weight: 700;
+                font-size: 1.2rem;
+                display: flex;
+                align-items: center;
+                & svg{
+                    font-size: 1.4rem;
+                    height: 1.43;
+                    width: 1.24rem;
+                    margin-right: .2rem;
+                }
+            }
+
+            &-percentage {
+                font-weight: 400;
+                font-size: 1.2rem;
+                color: var(--text-grey-primary);
+            }
+        }
+
+        &__progress-bar {
+            width: 100%;
+            height: .8rem;
+            position: relative;
+            border-radius: var(--br-lg);
+            background-color: #F2F5F7;
+            &::after{
+                border-radius: var(--br-lg);
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: var(--project-progress);
+                height: 100%;
+                background: repeating-linear-gradient( 110deg, #4734FE, #4734FE 8px, #8478FE 8px, #8478FE 16px);
+            }
+
+            &__icon{
+                position: absolute;
+                top: 50%;
+                left: calc(var(--project-progress) - 5%);
+                transform: translateY(-50%);
+                background: white;
+                border: 1px solid #EAEDF0;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 1.6rem;
+                height: 1.6rem;
+                z-index: 2;
+                
+            }
+        }
+    }
+
+    & .project-task{
+        padding: 1.8rem 1.8rem 1.8rem 2rem ;
+
+        &-list{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+            font-weight: 400;
+            & li{
+                font-size: 1.4rem;
+                color: var(--text-grey-secondary);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                & img{
+                    width: 1.2rem;
+                    height: 1.2rem;      
+                }
+            }
+        }
+    }
+}

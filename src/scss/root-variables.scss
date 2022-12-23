@@ -1,0 +1,22 @@
+:root{
+    --body-padding:1rem;
+
+    // Header
+    --header-height:5.4rem;
+
+    // BORDER RADIUS
+    --br-sm:7px;
+    --br-md:10px;
+    --br-lg:13px;
+
+    // BORDER COLOR
+    --border-color-primary:#E9EBEF;
+
+    // COLORS
+
+    --text-grey-primary:#7F8995;
+    --text-grey-secondary:#6C6F75;
+
+    // Gradients
+    --gradient-primary:radial-gradient(106.9% 106.9% at 83.5% 100%, #330f52 0%, var(--token-2e606580-c5cb-45c2-a66e-07cb8dbe5a38, rgb(136, 0, 255)) 100%);
+}

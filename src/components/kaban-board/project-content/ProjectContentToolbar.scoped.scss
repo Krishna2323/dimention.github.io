@@ -1,0 +1,30 @@
+.project-content__toolbar{
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // height: calc(var(--header-height) - 1rem);
+    padding: .7rem 1.6rem 1.1rem 2.6rem;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color-primary);
+    position: sticky;
+    top: var(--header-height) ;
+    background: white;
+    z-index: 2;
+
+    & .btns-div{
+        display: flex;
+        gap: .5rem;
+    }
+
+    & .avatars{
+        margin-left: auto;
+        display: flex;
+        gap: .4rem;
+        margin-right: 1.6rem;
+        & img{
+            width: 2.8rem;
+            height: 2.8rem;
+        }
+    }
+}
