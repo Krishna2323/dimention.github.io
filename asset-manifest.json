@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/dimention.github.io/static/css/main.1998316e.css",
+    "main.css": "/dimention.github.io/static/css/main.38446b3d.css",
     "main.js": "/dimention.github.io/static/js/main.2a8442ab.js",
     "static/media/User-2.svg": "/dimention.github.io/static/media/User-2.05d932beb9e04a1394c38dccdf859859.svg",
     "static/media/User-3.svg": "/dimention.github.io/static/media/User-3.b3f18dbc98736d843cc3e2a54c44b5a2.svg",
     "static/media/User-4.svg": "/dimention.github.io/static/media/User-4.e030886036a729a140ebf4a486420ddc.svg",
     "static/media/Party.svg": "/dimention.github.io/static/media/Party.d10fcae80f79d7effb78c1e5373f375c.svg",
     "static/media/User-1.svg": "/dimention.github.io/static/media/User-1.1e98d30d185143a84f4d29cf7e201d27.svg",
+    "static/media/GT-Walsheim-Condensed-Thin-Trial.woff2": "/dimention.github.io/static/media/GT-Walsheim-Condensed-Thin-Trial.31a2dc68dc36772b4355.woff2",
     "static/media/GT-Walsheim-Regular-Trial.woff2": "/dimention.github.io/static/media/GT-Walsheim-Regular-Trial.65e2b73b7348d3bc1a2d.woff2",
     "static/media/GT-Walsheim-Medium-Trial.woff2": "/dimention.github.io/static/media/GT-Walsheim-Medium-Trial.4b37de63ea8116944a09.woff2",
     "static/media/calendar.svg": "/dimention.github.io/static/media/calendar.f572a559e1eeefa5443837b67ec55301.svg",
@@ -26,11 +27,11 @@
     "static/media/In-Progress.svg": "/dimention.github.io/static/media/In-Progress.83c6a22c82c7a2548e672a0ad092fc30.svg",
     "static/media/arrow.svg": "/dimention.github.io/static/media/arrow.3689ffa0e912d0199875a68b91deb0ad.svg",
     "static/media/Dashed-Circle.svg": "/dimention.github.io/static/media/Dashed-Circle.b7a25063a7f514a49466cb0ad61bb138.svg",
-    "main.1998316e.css.map": "/dimention.github.io/static/css/main.1998316e.css.map",
+    "main.38446b3d.css.map": "/dimention.github.io/static/css/main.38446b3d.css.map",
     "main.2a8442ab.js.map": "/dimention.github.io/static/js/main.2a8442ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.1998316e.css",
+    "static/css/main.38446b3d.css",
     "static/js/main.2a8442ab.js"
   ]
 }
