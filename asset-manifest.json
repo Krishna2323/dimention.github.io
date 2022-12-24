@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dimention.github.io/static/css/main.0dd43a23.css",
+    "main.css": "/dimention.github.io/static/css/main.057e7cfb.css",
     "main.js": "/dimention.github.io/static/js/main.ef62e48b.js",
     "static/media/User-2.svg": "/dimention.github.io/static/media/User-2.05d932beb9e04a1394c38dccdf859859.svg",
     "static/media/User-3.svg": "/dimention.github.io/static/media/User-3.b3f18dbc98736d843cc3e2a54c44b5a2.svg",
@@ -28,11 +28,11 @@
     "static/media/arrow.svg": "/dimention.github.io/static/media/arrow.3689ffa0e912d0199875a68b91deb0ad.svg",
     "static/media/ArrowRight.svg": "/dimention.github.io/static/media/ArrowRight.de301dd051d82e1e86b904634077902c.svg",
     "static/media/Dashed-Circle.svg": "/dimention.github.io/static/media/Dashed-Circle.b7a25063a7f514a49466cb0ad61bb138.svg",
-    "main.0dd43a23.css.map": "/dimention.github.io/static/css/main.0dd43a23.css.map",
+    "main.057e7cfb.css.map": "/dimention.github.io/static/css/main.057e7cfb.css.map",
     "main.ef62e48b.js.map": "/dimention.github.io/static/js/main.ef62e48b.js.map"
   },
   "entrypoints": [
-    "static/css/main.0dd43a23.css",
+    "static/css/main.057e7cfb.css",
     "static/js/main.ef62e48b.js"
   ]
 }
