@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/dimention.github.io/static/css/main.1faa4298.css",
-    "main.js": "/dimention.github.io/static/js/main.8e46604f.js",
+    "main.css": "/dimention.github.io/static/css/main.56c13cb0.css",
+    "main.js": "/dimention.github.io/static/js/main.ec7ca52d.js",
     "static/media/User-2.svg": "/dimention.github.io/static/media/User-2.05d932beb9e04a1394c38dccdf859859.svg",
     "static/media/User-3.svg": "/dimention.github.io/static/media/User-3.b3f18dbc98736d843cc3e2a54c44b5a2.svg",
     "static/media/User-4.svg": "/dimention.github.io/static/media/User-4.e030886036a729a140ebf4a486420ddc.svg",
     "static/media/Party.svg": "/dimention.github.io/static/media/Party.d10fcae80f79d7effb78c1e5373f375c.svg",
     "static/media/User-1.svg": "/dimention.github.io/static/media/User-1.1e98d30d185143a84f4d29cf7e201d27.svg",
-    "static/media/GT-Walsheim-Condensed-Thin-Trial.woff2": "/dimention.github.io/static/media/GT-Walsheim-Condensed-Thin-Trial.31a2dc68dc36772b4355.woff2",
+    "static/media/GT-Walsheim-Light-Trial.woff2": "/dimention.github.io/static/media/GT-Walsheim-Light-Trial.2ccef5b753de58e543b2.woff2",
     "static/media/GT-Walsheim-Regular-Trial.woff2": "/dimention.github.io/static/media/GT-Walsheim-Regular-Trial.65e2b73b7348d3bc1a2d.woff2",
     "static/media/GT-Walsheim-Medium-Trial.woff2": "/dimention.github.io/static/media/GT-Walsheim-Medium-Trial.4b37de63ea8116944a09.woff2",
     "static/media/calendar.svg": "/dimention.github.io/static/media/calendar.f572a559e1eeefa5443837b67ec55301.svg",
     "static/media/Cloud.svg": "/dimention.github.io/static/media/Cloud.ad1020aae6bcc93999bf4819d61c2a91.svg",
     "static/media/Link.svg": "/dimention.github.io/static/media/Link.dfc756d91a3ba08475ed5f7b048114e8.svg",
     "static/media/message.svg": "/dimention.github.io/static/media/message.e4074b4cd41653c1d505ea1fa7e372af.svg",
+    "static/media/Shield.svg": "/dimention.github.io/static/media/Shield.cfe54006d491a879b78fd228ff82b4b9.svg",
     "static/media/Dashboard.svg": "/dimention.github.io/static/media/Dashboard.ad88cf6d7df556ba54fbd48ae77e4ede.svg",
     "static/media/Menu.svg": "/dimention.github.io/static/media/Menu.e73c93c74c527e9d723dd64afecfea33.svg",
     "static/media/Headphone.svg": "/dimention.github.io/static/media/Headphone.9ced06a81daae3e915ffbba9b2e54abb.svg",
@@ -28,11 +29,11 @@
     "static/media/arrow.svg": "/dimention.github.io/static/media/arrow.3689ffa0e912d0199875a68b91deb0ad.svg",
     "static/media/ArrowRight.svg": "/dimention.github.io/static/media/ArrowRight.de301dd051d82e1e86b904634077902c.svg",
     "static/media/Dashed-Circle.svg": "/dimention.github.io/static/media/Dashed-Circle.b7a25063a7f514a49466cb0ad61bb138.svg",
-    "main.1faa4298.css.map": "/dimention.github.io/static/css/main.1faa4298.css.map",
-    "main.8e46604f.js.map": "/dimention.github.io/static/js/main.8e46604f.js.map"
+    "main.56c13cb0.css.map": "/dimention.github.io/static/css/main.56c13cb0.css.map",
+    "main.ec7ca52d.js.map": "/dimention.github.io/static/js/main.ec7ca52d.js.map"
   },
   "entrypoints": [
-    "static/css/main.1faa4298.css",
-    "static/js/main.8e46604f.js"
+    "static/css/main.56c13cb0.css",
+    "static/js/main.ec7ca52d.js"
   ]
 }
