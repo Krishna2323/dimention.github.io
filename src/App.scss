@@ -15,7 +15,7 @@
 }
 @font-face {
   font-family:Gt-Whelshime-Thin;
-  src: url('/assets/Font/GT-Walsheim-Condensed-Thin-Trial.woff2');
+  src: url('/assets/Font/GT-Walsheim-Light-Trial.woff2');
 }
 
 html {
@@ -23,17 +23,17 @@ html {
   box-sizing: border-box;
 
 
-  @media (max-width: 75em) {
-    font-size: 56.25%;
-  }
+  // @media (max-width: 75em) {
+  //   font-size: 56.25%;
+  // }
 
-  @media (max-width: 56.25em) {
-    font-size: 50%;
-  }
+  // @media (max-width: 56.25em) {
+  //   font-size: 50%;
+  // }
 
-  @media (max-width: 37.5em) {
-    font-size: 43.75%;
-  }
+  // @media (max-width: 37.5em) {
+  //   font-size: 43.75%;
+  // }
 }
 
 *,
@@ -41,18 +41,13 @@ html {
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
-
   font-family: "Gt-Whelshime", sans-serif;
   font-weight: 400;
-  position: relative;
-  padding: var(--body-padding);
-  background: linear-gradient(to bottom, #5a1c90 0%, rgb(136, 0, 255) 100%);;
-  // background: var(--gradient-primary);
-  
+  position: relative;  
 
   @media (max-width: 1200px) {
     padding: 0;
@@ -62,11 +57,16 @@ body {
 
 .kanban-board{
   width: 100%;
-  height: calc(100vh - var(--body-padding) * 2);
+  height: calc(100vh );
   box-shadow: 0rem 0rem 2rem rgba(0,0,0,.2);
-  border-radius: var(--br-md);
   overflow: hidden;
-  background-color: white;
+  background-color: var(--bg-primary);
   display: grid;
-  grid-template-columns: [side-navbar-start].5fr[side-navbar-end sub-menu-start] 2.1fr [sub-menu-end main-container-start] 7.4fr [main-container-end];
+  grid-template-columns: [side-navbar-start]min-content[side-navbar-end sub-menu-start] 2.1fr [sub-menu-end main-container-start] 7.4fr [main-container-end];
+}
+
+#placeholder{
+  & > div{
+    background-color: var(--task-card-placeholder);
+  }
 }

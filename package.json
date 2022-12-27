@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://dimention.github.io/dimention.github.io",
   "dependencies": {
+    "@krishna2323/react-beautiful-dnd": "^13.1.8",
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

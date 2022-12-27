@@ -1,24 +1,36 @@
 .side-navbar {
-    // background-color: aquamarine;
-    height: calc(100vh - var(--body-padding) * 2);
-    padding: calc(min(1.5vh, 1.5vw)) 0;
+    height: 100vh;
+    padding: 1.4rem 0;
     border-right: 1px solid var(--border-color-primary);
-    min-width: 6rem;
 
 
     &__brand-logo {
-        padding: 0 0 1rem;
-        border-bottom: 1px solid var(--border-color-primary);
-        width: 70%;
+        padding: 0 0 1.1rem 0;
         display: flex;
         justify-content: center;
         margin: 0 auto;
+        position: relative;
+        & img{
+            filter: var(--icon-filter-primary);
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 3.2rem;
+            height: 1px;
+            background-color: var(--border-color-primary);
+            transform: translateX(-50%);
+            filter: none;
+        }
     }
 
     &__project-links {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.6rem;
         padding: 1rem 0;
         list-style: none;
         width: 100%;
@@ -30,15 +42,16 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 0 1.2rem ;
             & a {
-                background-color: #F5F5F5;
-                padding: .7rem;
-                border-radius: var(--br-sm);
+                background-color: var(--nav-link-bg);
+                border-radius: 8px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: fit-content;
-                min-width: 28px;
+                width: 3.2rem;
+                height: 3.2rem;
 
                 & svg:active{
                     fill: inherit;
@@ -46,18 +59,18 @@
 
 
                 &.active {
-                    border: 1px solid #533BE5;
+                    border: 1px solid var(--active-nav-link-color);
+                    background:rgba(83, 59, 229, 0.05);
                     &::after {
                         content: "";
                         position: absolute;
                         top: 50%;
                         left: 0;
-                        width: 3.5px;
-                        background-color: #533BE5;
+                        width: 2px;
+                        background-color: var(--active-nav-link-color);
                         transform: translateY(-50%);
-                        height: 80%;
-                        border-top-right-radius: var(--br-lg);
-                        border-bottom-right-radius: var(--br-lg);
+                        height:2.5rem;
+                        border-radius: 0px 8px 8px 0px;
                     }
                 }
             }

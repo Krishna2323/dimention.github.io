@@ -1,0 +1,26 @@
+diff --git a/node_modules/react-beautiful-dnd/src/view/draggable/get-style.js b/node_modules/react-beautiful-dnd/src/view/draggable/get-style.js
+index f85380d..9351cd2 100644
+--- a/node_modules/react-beautiful-dnd/src/view/draggable/get-style.js
++++ b/node_modules/react-beautiful-dnd/src/view/draggable/get-style.js
+@@ -81,7 +81,7 @@ function getDraggingStyle(dragging: DraggingMapProps): DraggingStyle {
+     // Opting out of the standard css transition for the dragging item
+     transition: getDraggingTransition(shouldAnimate, dropping),
+     transform,
+-    opacity: getDraggingOpacity(isCombining, isDropAnimating),
++    opacity: .1,
+     // ## Layering
+     zIndex: isDropAnimating
+       ? zIndexOptions.dropAnimating
+diff --git a/node_modules/react-beautiful-dnd/src/view/placeholder/placeholder.jsx b/node_modules/react-beautiful-dnd/src/view/placeholder/placeholder.jsx
+index 0a95b9f..443251e 100644
+--- a/node_modules/react-beautiful-dnd/src/view/placeholder/placeholder.jsx
++++ b/node_modules/react-beautiful-dnd/src/view/placeholder/placeholder.jsx
+@@ -89,7 +89,7 @@ const getStyle = ({
+ 
+     // creating borderBox
+     // background: 'green',
+-    boxSizing: 'border-box',
++    boxSizing: 'content-box',
+     width: size.width,
+     height: size.height,
+     // creating marginBox

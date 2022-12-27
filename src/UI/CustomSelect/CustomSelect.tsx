@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, SyntheticEvent, useState } from "react";
+import React, { useState } from "react";
 import "./CustomSelect.scoped.scss"
 
 const CustomSelect:React.FC<{onChange:(st:string)=>void,default:string,options:string[]}> = (props) => {

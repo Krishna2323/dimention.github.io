@@ -1,8 +1,7 @@
 import DashedCircle from "../../../../assets/Project-Content/Dashed-Circle.svg";
 import { TaskHeaderObj } from "../../../../model/task-header";
-import In_Progress_Icon from "../../../../assets/Project-Content/In-Progress.svg"
+import In_Progress_Icon from "../../../../assets/Project-Content/in-progress.svg"
 import Completed_Icon from "../../../../assets/Project-Content/Completed.svg"
-import { dummmyTasks } from "../../../../data/DummyTasks";
 
 
 export const TaskHeaderData:TaskHeaderObj[] = [
@@ -10,7 +9,7 @@ export const TaskHeaderData:TaskHeaderObj[] = [
     title: "TODO",
     icon: DashedCircle,
     totalTask: 2,
-    borderBottom: "#111118",
+    borderBottom: "var(--task-heading-color)",
     taskType:"todoTasks"
   },
   {

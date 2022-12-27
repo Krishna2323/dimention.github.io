@@ -1,7 +1,7 @@
-.project-content__toolbar{
+.kanban-toolbar{
     padding: 0 3rem;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     // height: calc(var(--header-height) - 1rem);
     padding: .7rem 1.6rem 1.1rem 2.6rem;
@@ -9,12 +9,12 @@
     border-bottom: 1px solid var(--border-color-primary);
     position: sticky;
     top: var(--header-height) ;
-    background: white;
+    background-color: var(--bg-primary);
     z-index: 2;
 
     & .btns-div{
         display: flex;
-        gap: .5rem;
+        gap: .6rem;
     }
 
     & .avatars{

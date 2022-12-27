@@ -1,16 +1,17 @@
-import React from 'react'
-import "./ProjectContentMain.scoped.scss"
+import "./KanbanBoard.scoped.scss"
 import { TaskHeaderData } from './TaskHeaderData'
-import ProgressSection from './ProgressSection'
-import {DragDropContext, DropResult, OnDragEndResponder} from "react-beautiful-dnd"
+import {DragDropContext, DropResult} from "@krishna2323/react-beautiful-dnd"
 import { useAppDispatch, useAppSelector } from '../../../../hooks/redux'
 import { updateMultipleColumn, updateSameColumn } from '../../../../store/Tasks/TaskAction'
+import { onDragStartHandler, onDragUpdateHandler } from '../../helpers/helper'
+import TaskColumn from './TaskColumn'
 
-const ProjectContentMain = () => {
+const KanbanBoard = () => {
   const tasks = useAppSelector(state=>state.tasks)
   const dispatch=useAppDispatch()
 
   let onDragEnd:(result:DropResult)=>void=(result)=>{
+    document.getElementById("placeholder")?.remove()
     const {destination,source}=result;
     if(!destination)return;
     if(destination?.droppableId===source.droppableId && destination.index === source.index)return;
@@ -20,22 +21,15 @@ const ProjectContentMain = () => {
     }
     dispatch(updateMultipleColumn(tasks,destination,source))
       }
-
-  const onDragStart=(an:any)=>{
-    console.log(an)
-  }
-  const onDragUpdate=(an:any)=>{
-    console.log(an)
-  }
   return (
-    <DragDropContext onDragEnd={onDragEnd} onDragStart={onDragStart} onDragUpdate={onDragUpdate}>
+    <DragDropContext onDragEnd={onDragEnd} onDragStart={onDragStartHandler} onDragUpdate={onDragUpdateHandler}>
     <div className='project-content__main'>
         {TaskHeaderData.map(e=>(
-          <ProgressSection  headerData={e} key={e.borderBottom}/>
+          <TaskColumn  headerData={e} key={e.borderBottom}/>
         ))}
     </div>
     </DragDropContext>
   )
 }
 
-export default ProjectContentMain
+export default KanbanBoard

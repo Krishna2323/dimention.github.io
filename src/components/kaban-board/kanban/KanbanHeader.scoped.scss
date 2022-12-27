@@ -1,4 +1,4 @@
-.project-content__header {
+.kanban-header {
     padding: 0 1.6rem 0 2.6rem;
     display: flex;
     align-items: center;
@@ -8,7 +8,7 @@
     border-bottom: 1px solid var(--border-color-primary);
     position: sticky;
     top: 0;
-    background: white;
+    background-color: var(--bg-primary);
     z-index: 2;
 
     & .breadcrums {
@@ -16,17 +16,17 @@
         list-style: none;
 
         & li:last-of-type {
-            & svg {
+            & img {
                 display: none;
             }
 
-            color: #6C6F75;
+            color: var(--kanban-breadcrum-secondary-color);
         }
 
         & li {
             display: flex;
             align-items: center;
-            color: #282A2F;
+            color: var(--kanban-breadcrum-primary-color);
 
             & a {
                 font-size: 1.4rem;
@@ -36,11 +36,9 @@
                 color: inherit;
             }
 
-            & svg {
-                transform: translateY(1.5px);
+            & img {
                 color: #6C6F75;
-                padding: 2px;
-                font-size: 1.6rem;
+                padding: 2px 5px;
             }
         }
     }
@@ -50,13 +48,14 @@
         font-size: 1.2rem;
         font-weight: 400;
         margin-left: .6rem;
-        color: #6C6F75;
-        background: #EEEEEE;
+        color: var(--kanban-breadcrum-secondary-color);
+        background: var(--kanban-header-selection-bg);
         padding:0  .6rem;
         border-radius: 5px;
         line-height: 2rem;
         text-transform: uppercase;
         margin-right: auto;
+        font-family: "Gt-Whelshime-Light", sans-serif;
     }
 
     & .search-bar {
@@ -67,22 +66,24 @@
                 border: none;
                 outline: none;
                 border-radius: var(--br-sm);
-                background-color: #EFEFEF;
-                padding: .8rem .8rem .8rem 3.2rem;
-                width: 15rem;
+                background-color: var(--kanban-search-input-bg);
+                padding: .6rem .6rem .6rem 3.2rem;
+                width: 17.5rem;
                 font-size: 1.2rem;
                 font-weight: 500;
-                color: #5C6066;
+                color: var(--kanban-search-input-color);
                 display: table-cell;
                 vertical-align: middle;
+                // font-family:Gt-Whelshime-Light ;
+                line-height: 20px;
 
+                letter-spacing: .2px;
                 // transform: translateY(4px);
 
                 &::placeholder{
-                    color: #5C6066;
                     font-size: 1.2rem;
                     font-weight: 500;
-                    color: #5C6066;
+                    color: var(--kanban-search-input-color);
                 }
             }
 
@@ -101,15 +102,17 @@
     & .header-icon {
         border-radius: 8px;
         border: 1px solid var(--border-color-primary);
-        padding: .6rem .5rem;
+        padding: .8rem .7rem;
         display: flex;
         align-items: center;
-        margin-left:.8rem ;
+        margin:0 1.2rem ;
+
 // 
         & svg {
             color: #5C6066;
-            width: 1.8rem;
-            height: 1.6rem;
+            width: 1.6rem;
+            height: 1.4rem;
+            filter: var(--icon-filter-primary);
         }
     }
 }

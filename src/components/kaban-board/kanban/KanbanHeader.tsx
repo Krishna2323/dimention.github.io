@@ -1,21 +1,27 @@
-import "./ProjectContentHeader.scoped.scss"
+import "./KanbanHeader.scoped.scss"
 import { Link } from "react-router-dom";
-import * as RiIcons from "react-icons/ri";
-import * as FiIcons from "react-icons/fi";
 import * as BsIcons from "react-icons/bs";
 import SearchIcon from "../../../assets/Project-Content/Search.svg"
+import ArrowRight from "../../../assets/Project-Content/ArrowRight.svg"
+import React from "react";
+import { useAppDispatch } from "./../../../hooks/redux";
+import UI from "../../../../src/store/UI/UiSlice";
 
-const ProjectContentHeader = () => {
+const KanbanHeader = () => {
+  const dispatch=useAppDispatch()
+  const toggleBtnHandler=(e:React.MouseEvent<HTMLButtonElement>)=>{
+    dispatch(UI.actions.toggleMode({}))
+  }
   return (
-    <div className="project-content__header">
+    <div className="kanban-header">
       <ul className="breadcrums">
         <li>
           <Link to="#">Projects</Link>
-          <RiIcons.RiArrowRightSLine />
+          <img src={ArrowRight} alt="arrow right"/>
         </li>
         <li>
           <Link to="#">Cloud Platform</Link>
-          <RiIcons.RiArrowRightSLine />
+          <img src={ArrowRight} alt="arrow right"/>
         </li>
       </ul>
       <span className="selection">Flyte</span>
@@ -28,8 +34,9 @@ const ProjectContentHeader = () => {
       <Link to="#" className="header-icon">
         <BsIcons.BsLayoutSidebarReverse />
       </Link>
+      <button className="btn-primary btn-primary--sm" onClick={toggleBtnHandler}>Toggle Mode</button>
     </div>
   );
 };
 
-export default ProjectContentHeader;
+export default KanbanHeader;

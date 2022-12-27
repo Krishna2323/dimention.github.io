@@ -1,4 +1,4 @@
-import "./ProjectContentToolbar.scoped.scss";
+import "./KanbanToolbar.scoped.scss";
 import User_1_Avatar from "./../../../assets/User-Avatars/User-1.svg";
 import User_2_Avatar from "./../../../assets/User-Avatars/User-2.svg";
 import CloudIcon from "../.../../../../assets/Project-Content/Toolbar/Cloud.svg";
@@ -7,11 +7,11 @@ import HeadphoneIcon from "../.../../../../assets/Project-Content/Toolbar/Headph
 import LinkIcon from "../.../../../../assets/Project-Content/Toolbar/Link.svg";
 import DashboardIcon from "../.../../../../assets/Project-Content/Toolbar/Dashboard.svg";
 
-const ProjectContentToolbar = () => {
+const KanbanToolbar = () => {
   return (
-    <div className="project-content__toolbar">
+    <div className="kanban-toolbar">
       <div className="btns-left btns-div">
-        <button className="btn-primary">
+        <button className="btn-primary" style={{padding:".4rem .7rem",gap:".6rem"}}>
           <img src={CloudIcon} alt="cloud icon" />
           25%
         </button>
@@ -28,10 +28,10 @@ const ProjectContentToolbar = () => {
           </div>
           <img src={DashboardIcon} alt="Dashboard icon" />
         </button>
-        <button className="btn-primary">
+        <button className="btn-primary" style={{height:"2.8rem"}}>
           <img src={HeadphoneIcon} alt="Headphone icon" />
         </button>
-        <button className="btn-primary">
+        <button className="btn-primary btn-primary--sm" style={{color:"var(--btn-color-secondary)", height:"2.8rem"}}>
           <img src={LinkIcon} alt="Link icon" />
           Share
         </button>
@@ -40,4 +40,4 @@ const ProjectContentToolbar = () => {
   );
 };
 
-export default ProjectContentToolbar;
+export default KanbanToolbar;

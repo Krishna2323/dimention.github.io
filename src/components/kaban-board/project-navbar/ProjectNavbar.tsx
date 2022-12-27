@@ -1,15 +1,14 @@
 import React from "react";
-import "./ProjectSidebar.scoped.scss";
+import "./ProjectNavbar.scoped.scss";
 import ProjectImage from "../../../assets/Project-Details/ProjectImage.png";
-import * as RiIcons from "react-icons/ri"
-import * as TiIcons from "react-icons/ti"
 import PartySvg from "../../../assets/Project-Details/Party.svg"
 import ArrowIcon from "../../../assets/Project-Details/arrow.svg"
+import ShieldIcon from "../../../assets/Project-Details/Shield.svg"
 
 
-const ProjectSidebar: React.FC = () => {
+const ProjectNavbar: React.FC = () => {
   return (
-    <div className="project-sidebar">
+    <div className="project-navbar">
       <div className="project-name">
         <h2>Project Name</h2>
       </div>
@@ -18,7 +17,7 @@ const ProjectSidebar: React.FC = () => {
       </div>
       <div className="project-progress">
         <div className="project-progress__stats">
-          <h5 className="project-progress__stats-level"><RiIcons.RiShieldFlashLine/>Level 1</h5>
+          <span className="project-progress__stats-level"><img src={ShieldIcon} alt="Shield Svg"/>Level 1</span>
           <span className="project-progress__stats-percentage">40%</span>
         </div>
         <div className="project-progress__progress-bar" style={{"--project-progress":"45%"} as React.CSSProperties}>
@@ -39,4 +38,4 @@ const ProjectSidebar: React.FC = () => {
   );
 };
 
-export default ProjectSidebar;
+export default ProjectNavbar;
